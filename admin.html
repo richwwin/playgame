@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>後台管理</h1>
+    <div>
+        <h2>盲盒管理</h2>
+        <form id="boxForm">
+            <input type="text" id="boxName" placeholder="盲盒名稱" required>
+            <input type="file" id="boxGift" required>
+            <button type="submit">新增盲盒</button>
+        </form>
+    </div>
+    <div>
+        <h2>會員管理</h2>
+        <button id="fetchMembers">獲取會員列表</button>
+        <ul id="membersList"></ul>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
